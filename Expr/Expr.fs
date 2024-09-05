@@ -5,9 +5,15 @@
 module Expr
 
 open System.IO
-open Absyn
+//open Absyn
 
 (* From file expr/expr.sml * Simple arithmetic expressions *)
+
+type expr = 
+  | CstI of int
+  | Var of string
+  | Let of string * expr * expr
+  | Prim of string * expr * expr
  
 let e1 = Let("z", CstI 17, Prim("+", Var "z", Var "z"));
 
@@ -333,3 +339,18 @@ let s3 = scomp e3 []
 let intsToFile (inss : int list) (fname : string) = 
     let text = String.concat " " (List.map string inss)
     System.IO.File.WriteAllText(fname, text);;
+
+(* Ex 2.4 - assemble to integers *)
+(* SCST = 0, SVAR = 1, SADD = 2, SSUB = 3, SMUL = 4, SPOP = 5, SSWAP = 6; *)
+let sinstrToInt = function
+  | SCstI i -> [0;i]
+  | SVar i  -> [1;i]
+  | SAdd    -> [2]
+  | SSub    -> [3]
+  | SMul    -> [4]
+  | SPop    -> [5]
+  | SSwap   -> [6]
+
+let assemble (instrs: sinstr list) : int list = 
+  List.rev (List.fold (fun acc elem -> 
+            List.fold(fun acc2 elem -> elem :: acc2 ) acc (sinstrToInt elem)) [] instrs)

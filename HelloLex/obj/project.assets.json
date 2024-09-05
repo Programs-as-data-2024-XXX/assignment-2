@@ -113,11 +113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/Users/mchrn/ITU/5_Semester/Programs_as_data/ProgramsAsDataCodeE2024/Lectures/Lec02/HelloLex/hello.fsproj",
-      "projectName": "hello",
-      "projectPath": "/mnt/c/Users/mchrn/ITU/5_Semester/Programs_as_data/ProgramsAsDataCodeE2024/Lectures/Lec02/HelloLex/hello.fsproj",
+      "projectUniqueName": "/mnt/c/Users/mchrn/ITU/5_Semester/Programs_as_data/assignment-2/HelloLex/hello3.fsproj",
+      "projectName": "hello3",
+      "projectPath": "/mnt/c/Users/mchrn/ITU/5_Semester/Programs_as_data/assignment-2/HelloLex/hello3.fsproj",
       "packagesPath": "/home/macj/.nuget/packages/",
-      "outputPath": "/mnt/c/Users/mchrn/ITU/5_Semester/Programs_as_data/ProgramsAsDataCodeE2024/Lectures/Lec02/HelloLex/obj/",
+      "outputPath": "/mnt/c/Users/mchrn/ITU/5_Semester/Programs_as_data/assignment-2/HelloLex/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/macj/.nuget/NuGet/NuGet.Config"

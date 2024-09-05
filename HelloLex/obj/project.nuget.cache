@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6a5qUnukJXmM5tMxxwDxeB27PVfCPztN0Rpu48smb/VShuqM3puFytTBDnXYBpasQKBnxpaZLnz9xR49oDgBjQ==",
+  "success": true,
+  "projectFilePath": "/mnt/c/Users/mchrn/ITU/5_Semester/Programs_as_data/ProgramsAsDataCodeE2024/Lectures/Lec02/HelloLex/hello.fsproj",
+  "expectedPackageFiles": [
+    "/home/macj/.nuget/packages/fsharp.core/8.0.200/fsharp.core.8.0.200.nupkg.sha512"
+  ],
+  "logs": []
+}
